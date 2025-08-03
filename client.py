@@ -7,7 +7,7 @@ nickname = input("Choose your nickname: ")
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print("Request sent")
-client.connect(('127.0.0.1', 55555))
+client.connect(('Enter the server IP', 55555))
 print("Connected")
 
 
@@ -42,4 +42,5 @@ receive_thread = threading.Thread(target=receive)
 receive_thread.start()
 
 write_thread = threading.Thread(target=write)
+
 write_thread.start()
